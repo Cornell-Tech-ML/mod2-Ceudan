@@ -1,5 +1,4 @@
-"""
-Description:
+"""Description:
 Note: Make sure that both the new and old module files are in same directory!
 
 This script helps you sync your previous module works with current modules.
@@ -10,6 +9,7 @@ Usage: python sync_previous_module.py <source_dir_name> <dest_dir_name>
 
 Ex:  python sync_previous_module.py mle-module-0-sauravpanda24 mle-module-1-sauravpanda24
 """
+
 import os
 import shutil
 import sys
