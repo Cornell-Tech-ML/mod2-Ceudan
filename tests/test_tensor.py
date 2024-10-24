@@ -1,3 +1,11 @@
+# import debugpy
+
+# # Start listening for the debugger
+# debugpy.listen(("0.0.0.0", 5677))
+# print("Waiting for debugger to attach...")
+# debugpy.wait_for_client()
+
+
 from typing import Callable, Iterable, List, Tuple
 
 import pytest
@@ -223,5 +231,11 @@ def test_reduce_forward_all_dims() -> None:
 
     # shape (1, 1)
     t_summed_all_expected = tensor([27])
+
+    # print("t", t)
+    # print("t_summed_all", t_summed_all)
+    # print("t_summed_all.shape", t_summed_all.shape)
+    # print("t_summed_all_expected", t_summed_all_expected)
+    # print("t_summed_all_expected.shape", t_summed_all_expected.shape)
 
     assert_close(t_summed_all[0], t_summed_all_expected[0])
