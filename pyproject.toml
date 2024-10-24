@@ -13,6 +13,11 @@ ignore = [
     "**/docs/module1/**",
     "**/assignments",
     "**/project",
+    "**/tests",
+    "**/minitorch/__init__.py",
+    "**/minitorch/tensor_ops.py",
+    "**tester_scripts.py",
+    "**/minitorch",
     "**/mt_diagrams",
     "**/.*",
     "*chainrule.py*",
@@ -72,6 +77,7 @@ exclude = [
     "**/mt_diagrams/*",
     "**/minitorch/testing.py",
     "**/docs/**/*",
+    "**/minitorch/**",
 ]
 
 ignore = [
